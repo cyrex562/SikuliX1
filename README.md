@@ -1,3 +1,11 @@
+******** Paused (not available) till somewhen in later 2025 ********
+---
+
+Due to private priorities I did not have the time during 2024 nor could I concentrate on SikuliX.
+I cannot yet predict when or if I continue.
+
+---
+
 [![SikuliX](https://raw.githubusercontent.com/RaiMan/SikuliX1/master/Support/sikulix-red.png)](https://sikulix.github.io)
 
 ---
@@ -12,43 +20,32 @@ Great thanks for the new logo and all the help with the new webpage to [@Waleed 
 ---
 **2.0.6 (branch release_2.0.x) preparing for release - snapshots available**
 
-**Latest Upload: April 9th, 2022**
+**Latest Upload: April 17th, 2023**
 
 **Direct IDE downloads** &nbsp;&nbsp;&nbsp;&nbsp;
-[> for Windows <](https://oss.sonatype.org/service/local/artifact/maven/redirect?r=snapshots&g=com.sikulix&a=sikulixidewin&v=2.0.6-SNAPSHOT&e=jar)&nbsp;&nbsp;&nbsp;&nbsp;[> for macOS Intel <](https://oss.sonatype.org/service/local/artifact/maven/redirect?r=snapshots&g=com.sikulix&a=sikulixidemac&v=2.0.6-SNAPSHOT&e=jar)&nbsp;&nbsp;&nbsp;&nbsp;[> for macOS M1 <](https://oss.sonatype.org/service/local/artifact/maven/redirect?r=snapshots&g=com.sikulix&a=sikulixidemacm1&v=2.0.6-SNAPSHOT&e=jar)&nbsp;&nbsp;&nbsp;&nbsp;[> for Linux <](https://oss.sonatype.org/service/local/artifact/maven/redirect?r=snapshots&g=com.sikulix&a=sikulixidelux&v=2.0.6-SNAPSHOT&e=jar) 
+[> for Windows <](https://oss.sonatype.org/service/local/artifact/maven/redirect?r=snapshots&g=com.sikulix&a=sikulixidewin&v=2.0.6-SNAPSHOT&e=jar)&nbsp;&nbsp;&nbsp;&nbsp;[> for macOS Intel <](https://oss.sonatype.org/service/local/artifact/maven/redirect?r=snapshots&g=com.sikulix&a=sikulixidemac&v=2.0.6-SNAPSHOT&e=jar)&nbsp;&nbsp;&nbsp;&nbsp;[> for macOS Silicon Mx <](https://oss.sonatype.org/service/local/artifact/maven/redirect?r=snapshots&g=com.sikulix&a=sikulixidemacm&v=2.0.6-SNAPSHOT&e=jar)&nbsp;&nbsp;&nbsp;&nbsp;[> for Linux <](https://oss.sonatype.org/service/local/artifact/maven/redirect?r=snapshots&g=com.sikulix&a=sikulixidelux&v=2.0.6-SNAPSHOT&e=jar) 
 
-You get files like `sikulixidemac-2.0.6-20210708.194940-1.jar`, which you can place wherever you want and rename them to whatever you want. It is recommended to run with Java 11+ (preferably from [Adoptium/AdoptOpenJDK](https://adoptium.net) or [Azul](https://www.azul.com/downloads/?package=jdk#download-openjdk)) from a commandline/Terminal. 
+You get files like `sikulixidemac-2.0.6-20210708.194940-1.jar`, which you can place wherever you want and rename them to whatever you want. 
 
-**Be aware:** 
-- Java 8 is no longer supported. 
-- For macOS M1 (non-Intel) use the JDK's from [Azul](https://www.azul.com/downloads/?os=macos&architecture=arm-64-bit&package=jdk)
-- now using Tess4J/Tesseract 5 - macOS/Linux: have a Tesseract 5.0.1 ready (tesseract runs on commandline)
+**JAVA: must be Java 11 or later** (best places to get it: [Eclipse Temurin](https://adoptium.net) or [Azul](https://www.azul.com/downloads/?package=jdk#download-openjdk))
 
-[more information coming soon]()
+**OCR (macOS/Linux):** now using Tess4J/Tesseract 5 - have a Tesseract 5.x ready (tesseract runs on commandline)
+
+**OpenCV Support:** Windows/macOS have it bundled - for Linux you have to make it ready yourself 
+
+[more information coming sooner or later ;-)]()
 
 ---
 **2.1.0 (branch master) currently not useable - development suspended**
-
----
-**Java: must be Java 11 or later** (best places to get it: [AdoptOpenJDK](https://adoptopenjdk.net) or [Azul](https://www.azul.com/downloads/?package=jdk#download-openjdk))
-- non-LTS versions like Java 16 or even 17ea might create problems that should be reported
-- for macOS M1 (non-Intel) use the JDK's from [Azul](https://www.azul.com/downloads/?os=macos&architecture=arm-64-bit&package=jdk)
-
-**Windows:** Works out of the box
-
-**macOS/Linux** you have to make Tesseract OCR available ([for HowTo look here](https://github.com/RaiMan/SikuliX1/wiki/macOS-Linux:-Support-libraries-for-Tess4J-Tesseract-4-OCR)).
-
-**Linux** OpenCV ibraries are bundled and should work on Ubuntu-like flavors. In case of problems you have to find a solution.
-
 <hr>
 
-**Latest stable version is 2.0.5** (still runs with Java 8)
+**Latest stable version is 2.0.5** (still works with Java 8, does not run on Mac mX machines)
 
 [Important: Read about changes/issues/enhancements](https://github.com/RaiMan/SikuliX1/wiki/About-actual-release-version)
 
 [List of fixes](https://github.com/RaiMan/SikuliX1/wiki/ZZZ-Bug-Fixes)
 
-[Get SikuliX ready to use](https://raiman.github.io/SikuliX1/downloads.html)
+[Get SikuliX ready to use](https://raimans-sikulix.gitbook.io/untitled/)
  
 For use in **Java Maven projects** the dependency coordinates are:
 ```
