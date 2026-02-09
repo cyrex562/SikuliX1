@@ -1,0 +1,26 @@
+[package]
+name = "sikulix-vision"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Computer vision capabilities for SikuliX using OpenCV"
+
+[dependencies]
+sikulix-core = { path = "../sikulix-core", features = ["opencv"] }
+opencv = { workspace = true }
+thiserror.workspace = true
+anyhow.workspace = true
+image.workspace = true
+tracing.workspace = true
+
+[dev-dependencies]
+criterion = "0.5"
+proptest = "1.4"
+tempfile = "3.10"
+
+[[bench]]
+name = "template_matching"
+harness = false

@@ -1,0 +1,26 @@
+[package]
+name = "sikulix-python"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Python bindings for SikuliX using PyO3"
+
+[lib]
+name = "sikulix"
+crate-type = ["cdylib"]
+
+[dependencies]
+sikulix-core = { path = "../sikulix-core" }
+sikulix-vision = { path = "../sikulix-vision" }
+sikulix-platform = { path = "../sikulix-platform" }
+sikulix-remote = { path = "../sikulix-remote" }
+pyo3.workspace = true
+thiserror.workspace = true
+anyhow.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+
+[dev-dependencies]

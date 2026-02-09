@@ -1,0 +1,54 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/sikulix-core",
+    "crates/sikulix-vision",
+    "crates/sikulix-platform",
+    "crates/sikulix-remote",
+    "crates/sikulix-python",
+    "crates/sikulix-gui",
+]
+
+[workspace.package]
+version = "3.0.0"
+authors = ["SikuliX Contributors"]
+edition = "2021"
+rust-version = "1.75"
+license = "MIT"
+repository = "https://github.com/RaiMan/SikuliX1"
+
+[workspace.dependencies]
+# Core dependencies shared across crates
+anyhow = "1.0"
+thiserror = "1.0"
+tracing = "0.1"
+tracing-subscriber = "0.3"
+
+# Computer Vision
+opencv = { version = "0.92", default-features = false, features = ["imgcodecs", "imgproc", "highgui", "videoio"] }
+tesseract = "0.14"
+
+# Python bindings
+pyo3 = { version = "0.21", features = ["extension-module"] }
+
+# Serial/SSH
+serialport = "4.3"
+ssh2 = "0.9"
+regex = "1.10"
+
+# GUI (optional)
+egui = "0.27"
+eframe = "0.27"
+
+# Platform-specific
+windows = { version = "0.54", features = [
+    "Win32_Foundation",
+    "Win32_UI_Input_KeyboardAndMouse",
+    "Win32_Graphics_Gdi",
+    "Win32_System_Threading",
+] }
+
+# Utilities
+serde = "1.0"
+serde_json = "1.0"
+image = "0.25"

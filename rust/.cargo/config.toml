@@ -1,0 +1,9 @@
+[env]
+OPENCV_INCLUDE_PATHS = "C:/Users/cyrex/files/projects/vcpkg/installed/x64-windows-static-md/include/opencv4"
+OPENCV_LINK_PATHS = "C:/Users/cyrex/files/projects/vcpkg/installed/x64-windows-static-md/lib"
+OPENCV_LINK_LIBS = "opencv_calib3d4,opencv_core4,opencv_dnn4,opencv_features2d4,opencv_flann4,opencv_highgui4,opencv_imgcodecs4,opencv_imgproc4,opencv_ml4,opencv_objdetect4,opencv_photo4,opencv_stitching4,opencv_video4,opencv_videoio4,zlib,jpeg,libpng16,tiff,libwebp"
+OPENCV_CLANG_STDLIB_PATH = ""
+PYO3_PYTHON = "C:/Users/cyrex/AppData/Local/Programs/Python/Python313/python.exe"
+PYO3_USE_ABI3_FORWARD_COMPATIBILITY = "1"
+VCPKGRS_TRIPLET = "x64-windows-static-md"
+BINDGEN_EXTRA_CLANG_ARGS = "-D_ALLOW_COMPILER_AND_STL_VERSION_MISMATCH"

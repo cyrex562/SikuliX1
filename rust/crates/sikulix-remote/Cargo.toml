@@ -1,0 +1,20 @@
+[package]
+name = "sikulix-remote"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Serial and SSH automation for SikuliX infrastructure automation"
+
+[dependencies]
+sikulix-core = { path = "../sikulix-core" }
+serialport.workspace = true
+ssh2.workspace = true
+regex.workspace = true
+thiserror.workspace = true
+anyhow.workspace = true
+tracing.workspace = true
+
+[dev-dependencies]

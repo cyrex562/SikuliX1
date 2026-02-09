@@ -1,0 +1,25 @@
+[package]
+name = "sikulix-gui"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Minimal GUI tools for SikuliX (screenshot selector, region capture)"
+
+[[bin]]
+name = "sikulix-capture"
+path = "src/main.rs"
+
+[dependencies]
+sikulix-core = { path = "../sikulix-core" }
+sikulix-platform = { path = "../sikulix-platform" }
+egui.workspace = true
+eframe.workspace = true
+image.workspace = true
+anyhow.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+
+[dev-dependencies]
